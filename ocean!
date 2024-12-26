@@ -1,7 +1,5 @@
 ui library!!!
 local Library = {}
-local RunService = game:GetService("RunService")
-
 function Library:GetColor(color, table)
     table = table or false
     if (color.R == nil) then return Color3.fromRGB(19, 119, 255) end
@@ -445,7 +443,7 @@ function Library:CreateWindow(title, color)
                 -- Toggle Code
                 local ToggleCallback = callback
 
-                RunService.Heartbeat:Connect(function()
+                game.RunService.Heartbeat:Connect(function()
                     if (checkbox.BackgroundColor3 == oldcolor) then
                         checkbox.BackgroundColor3 = color
                     end
