@@ -1,8 +1,6 @@
-local RunService = game:GetService("RunService")
-
-
 ui library!!!
 local Library = {}
+local RunService = game:GetService("RunService")
 
 function Library:GetColor(color, table)
     table = table or false
